@@ -1,3 +1,28 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+	font-family: 'Dancing Script', cursive;
+	color: red;
+}
+
+.navbar-brand  {
+	color:red !important;
+}
+.navbar-default .navbar-nav>li>a {
+	color:white;
+}
+
+#bs-example-navbar-collapse-1.collapse.navbar-collapse {
+	background: #494949;
+}
+
+footer {
+    background-color: #494949;
+    color: white;
+    width: 100%;
+    height: 113px;
+ }
+
+
+
