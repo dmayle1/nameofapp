@@ -3,22 +3,22 @@
 <body>
   <div class="nav2">
   <ul id="Nav_Bar">
-    <li>Top Sellers</li>
+    <h2>Top Sellers</h2>
   </ul>
 </div>
 <div class= "container">
 <div class="row" style="background-color:lavenderblush;">
     <div class="col-xs-6 col-md-4">
       <h2>Nike Air Foam Posite Pro</h2>
-<img src="img/Nikeairfoampositepro.jpg" class="img-responsive">
+<%= image_tag("Nikeairfoampositepro copy.jpg")%>
     </div>
     <div class="col-xs-6 col-md-4">
       <h2>Nike Kobe 10 Elite</h2>
-<img src="img/Nikekobe10elite.jpg" class="img-responsive">
+<%= image_tag("Nikekobe10elite copy.jpg")%>
     </div>
     <div class="col-xs-6 col-md-4">
       <h2>Chuck All-Star 2</h2>
-  <%= image_tag("Lebron_12.jpg")%>
+   <%= image_tag("converseallstar2.jpg")%>
     </div>
   </div>
   </body>
@@ -37,9 +37,6 @@
   </tbody>
 </table>
 
-<div class="shoe">
-  <%= image_tag("converseallstar2.jpg")%>
-</div>
-<br>
+
 
 <%= link_to 'New Product', new_product_path %>
