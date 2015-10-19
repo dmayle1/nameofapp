@@ -1,17 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Hot Seller</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Chuck Taylor All-Star II</th>ne
-    </tr>
-    <tr>
-      <td>The Converse Chuck Taylor All Star II sneaker retains the iconic Chuck Taylor All Star silhouette you know and love, but now it’s built for more.</td>
-      <td colspan="3"></td>
-    </tr>
-  </thead>
+<body>
+  <div class="nav2">
+  <ul id="Nav_Bar">
+    <li>Top Sellers</li>
+  </ul>
+</div>
+<div class= "container">
+<div class="row" style="background-color:lavenderblush;">
+    <div class="col-xs-6 col-md-4">
+      <h2>Nike Air Foam Posite Pro</h2>
+<img src="img/Nikeairfoampositepro.jpg" class="img-responsive">
+    </div>
+    <div class="col-xs-6 col-md-4">
+      <h2>Nike Kobe 10 Elite</h2>
+<img src="img/Nikekobe10elite.jpg" class="img-responsive">
+    </div>
+    <div class="col-xs-6 col-md-4">
+      <h2>Chuck All-Star 2</h2>
+  <img src="img/Allstar2.jpg" class="img-responsive">
+    </div>
+  </div>
+  </body>
 
   <tbody>
     <% @products.each do |product| %>
