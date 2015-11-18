@@ -1,8 +1,13 @@
-<%= params[:example_key] %>
 
-def landing_page
- @products = Product.limit (3)
- end
+<%= params[:example_key].to_i * 10 %>
+
+<% 
+#def landing_page
+ @products ||= Product.limit (3) || []
+#end
+#landing_page
+@featured_product= Product.first || Product.new
+ %>
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -35,5 +40,6 @@ def landing_page
     <span class="sr-only">Next</span>
   </a>
 </div>
+
 <h2>Featured Product:</h2>
 <%= @featured_product.name %>

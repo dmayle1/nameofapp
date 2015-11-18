@@ -25,7 +25,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="#">Reebok</a></li>
-        <li><a href="#">Nike</a></li>
+        <li><a href="Nike">Nike</a></li>
         <li><a href="#">Adidas</a></li>
         <li><a href="#">Jordan</a></li>
         <li><a href="products">Products</a></li>
@@ -39,6 +39,11 @@
       <ul class="nav navbar-nav">
        <li><%= link_to 'Contact', "contact" %></li>
         <li><%= link_to 'About', "about" %></li>
+        <%= form_tag("/products", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
         </ul>
       </div> <!-- /.navbar-collapse --> 
 </div> <!--/.container-fluid -->
