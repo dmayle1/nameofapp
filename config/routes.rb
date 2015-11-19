@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'config/environment'
+
+  get 'static_pages/thank_you'
+
   resources :products
   get 'static_pages/about'
 
@@ -11,6 +15,8 @@ Rails.application.routes.draw do
   get 'static_pages/index'
 
   get 'static_pages/Nike'
+
+  post 'static_pages/thank_you'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

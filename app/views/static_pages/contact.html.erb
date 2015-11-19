@@ -15,3 +15,26 @@
         <h3>My Story</h3>
         <p>After spending 5 years as a Dietetic Technician, I decided it was time for a career change and learn web design. I have recently joined CareerFoundry's web design course in an effort to learn the skills needed to become a full stack engineer.</p>
    </div>
+   <h1>Contact Us</h1>
+
+<%= flash[:notice] %>
+
+<%= form_tag("/static_pages/thank_you") do %>
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group">
+            <%= label_tag :name, "Name" %>
+            <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+        </div>      
+        <div class="form-group">
+            <%= label_tag :email, "Email Address" %>
+            <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+        </div>
+        <div class="form-group">
+            <%= label_tag :message, "Message" %>
+            <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+        </div>      
+    </div>
+</div>
+<%= submit_tag "Send" %>   
+<% end %>
