@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'user_mailer/contact'
+
   get 'config/environment'
 
   get 'static_pages/thank_you'
