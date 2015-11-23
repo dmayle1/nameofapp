@@ -25,5 +25,18 @@ footer {
     height: 113px;
  }
 
+.nav>li>a:focus, .nav>li>a:hover {    
+    text-decoration: none;
+    background-color: red;
+    color: white
+ }
+
+
+a:visited {
+    color: white;
+}
+
+
+
 
 
