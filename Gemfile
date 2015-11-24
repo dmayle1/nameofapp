@@ -52,6 +52,8 @@ end
 
 gem 'devise'
 
-gem 'cancancan'
+gem 'cancancan', '~> 1.10'
+
+ruby '2.0.0'
 
 
