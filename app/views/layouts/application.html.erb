@@ -47,8 +47,8 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav">
-       <li><%= link_to 'Contact', "contact" %></li>
-        <li><%= link_to 'About', "about" %></li>
+       <li><%= link_to 'Contact', "static_pages/contact" %></li>
+        <li><%= link_to 'About', "static_pages/about" %></li>
         <%= form_tag("/products", method: "get") do %>
   <%= label_tag(:q, "Search for:") %>
   <%= text_field_tag(:q) %>
