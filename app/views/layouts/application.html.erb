@@ -25,10 +25,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="#">Reebok</a></li>
-        <li><a href="Nike">Nike</a></li>
+        <li><%= link_to "Nike", static_pages_Nike_path %></li>
         <li><a href="#">Adidas</a></li>
         <li><a href="#">Jordan</a></li>
-        <li><a href="products">Products</a></li>
+        <li><%= link_to "Products", products_path %></li>
         </ul>
         
          <ul class="nav pull-right">
@@ -47,8 +47,6 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav">
-       <li><%= link_to 'Contact', "static_pages/contact" %></li>
-        <li><%= link_to 'About', "static_pages/about" %></li>
         <%= form_tag("/products", method: "get") do %>
   <%= label_tag(:q, "Search for:") %>
   <%= text_field_tag(:q) %>
@@ -76,7 +74,11 @@
 <%= yield %>
 <div class= "bottom">
 <footer>
-	<p><h2><p>&copy; Daniel Mayle 2015</p><h2></p>
+	<div class="container">
+      <%= link_to "About Us", static_pages_about_path %>
+      <%= link_to "Contact Us", static_pages_contact_path %>  
+    </div>
+  <p><h2><p>&copy; Daniel Mayle 2015</p><h2></p>
 </footer>
 </div>
 </body>
