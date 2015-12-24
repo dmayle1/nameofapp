@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  post '/rate' => 'rater#create', :as => 'rate'
   devise_for :users
   resources :users
 
@@ -10,7 +11,6 @@ Rails.application.routes.draw do
 
   get 'static_pages/thank_you'
 
-  resources :products
   get 'static_pages/about'
 
   get 'static_pages/contact'
