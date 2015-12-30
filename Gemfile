@@ -61,6 +61,8 @@ gem 'will_paginate', '~> 3.0.6'
 gem 'ratyrate'
 
 gem 'rubocop'
+#change fixtures into factories
+gem 'factory_girl_rails', '~> 4.0'
 
 ruby '2.2.1'
 
