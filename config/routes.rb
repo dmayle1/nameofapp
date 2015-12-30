@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  post '/rate' => 'rater#create', :as => 'rate'
-  devise_for :users
-  resources :users
+  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
+  resources :users 
 
+  resources :products do
+    resources :comments
+  end
   
   
   get 'user_mailer/contact'
