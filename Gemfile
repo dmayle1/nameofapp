@@ -4,6 +4,8 @@ group :production do
 	gem 'rails_12factor'
 	gem 'pg'
 end
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
@@ -49,7 +51,10 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-
+   # guard for automated testing
+  gem 'guard-rspec', require: false
+   # gets guard and spork to communicate
+  gem 'guard-spork'
 end
 
 gem 'devise'
@@ -63,6 +68,9 @@ gem 'ratyrate'
 gem 'rubocop'
 #change fixtures into factories
 gem 'factory_girl_rails', '~> 4.0'
+#speeds up  automated tests
+gem 'spork-rails'
+
 
 ruby '2.2.1'
 
