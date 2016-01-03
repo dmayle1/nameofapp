@@ -71,6 +71,8 @@ gem 'factory_girl_rails', '~> 4.0'
 #speeds up  automated tests
 gem 'spork-rails'
 
+gem 'stripe'
+
 
 ruby '2.2.1'
 
