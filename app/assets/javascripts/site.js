@@ -7,3 +7,10 @@ $(document).on('ready page:load', function(){
 		}
 	});
 });
+
+	/*! elevateZoom */
+	$('.img-zoom').elevateZoom({
+		zoomType :"inner",
+		cursor: "crosshair"
+	});
+});

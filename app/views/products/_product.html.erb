@@ -1,26 +1,20 @@
 <div class="container">
-  
   <div class="row">
     <div class="col-md-4">
-     
-      <div class="productbox">
-        
-        <div class="imgthumb img-responsive">
+        <div class="productbox">
+          <div class="imgthumb img-responsive">
           <%= image_tag(product.image_url, :class => 'list_image') %>
         </div>
         <div class="caption">
           <h3><%= product.name %></h3>   
         </div>
-         
-      </div><!--end productbox-->
+        </div><!--end productbox-->
     </div><!--end columns-->
-
-         <div class="col-md-8" id="descriptionp">
+          <div class="col-md-8" id="descriptionp">
           <p><%= product.description %><br><br>
           <%= product.color %><br><br>
           €<%= product.price %><br><br>
           <%= link_to 'More Info', product %><br><br>
-
           <% if signed_in? && current_user.admin? %>
           <%= link_to 'Edit', edit_product_path(product) %> | 
           <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
@@ -31,3 +25,4 @@
 </div><!--/container -->
 <hr>
 
+<%= render @products %>

@@ -73,6 +73,8 @@ gem 'spork-rails'
 
 gem 'stripe'
 
+gem "brakeman", :require =>false
+
 
 ruby '2.2.1'
 
