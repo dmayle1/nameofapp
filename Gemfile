@@ -75,6 +75,8 @@ gem 'stripe'
 
 gem "brakeman", :require =>false
 
+gem 'angularjs-rails'
+
 
 ruby '2.2.1'
 
