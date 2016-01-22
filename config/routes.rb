@@ -26,6 +26,12 @@ Rails.application.routes.draw do
 
   get 'static_pages/Nike'
 
+  get 'static_pages/Adidas'
+
+  get 'static_pages/Reebok'
+
+  get 'static_pages/Jordan'
+
   post 'static_pages/thank_you'
 
 
