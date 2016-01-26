@@ -14,7 +14,7 @@ $(document).on('ready page:load', function() {
   angular.bootstrap(document.body, ['shop'])
 });
 
-app.controller('OrdersCtrl', ['$scope', 'models', function($scope, models){}
+app.controller('OrdersCtrl', ['$scope', 'models', function($scope, models){
   $scope.orders = models.orders.query();
   $scope.products = models.products.query();
  // Here will be all code belonging to this controller
@@ -30,7 +30,7 @@ app.controller('OrdersCtrl', ['$scope', 'models', function($scope, models){}
 
 $scope.deleteOrder = function(order){
   $scope.orders.splice($scope.orders.indexOf(order), 1);
-}
+};
 }]);
 	
  
