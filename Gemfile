@@ -77,6 +77,7 @@ gem "brakeman", :require =>false
 
 gem 'angularjs-rails'
 
+gem 'dalli'
 
 ruby '2.2.1'
 
