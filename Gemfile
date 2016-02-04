@@ -79,6 +79,8 @@ gem 'angularjs-rails'
 
 gem 'dalli'
 
+gem 'redis-rails'
+
 ruby '2.2.1'
 
 
